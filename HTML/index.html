@@ -12,7 +12,8 @@
     <body>
         <header><h1>Exercícios HTML</h1></header>
         <nav>
-            <a href="exercicios/teste.html">00 - Nagação entre páginas</a>
+            <a href="exercicios/teste.html">00 - Nagação entre páginas</a><br>
+            <a href="exercicios/texto1.html">01 - Texto 1</a>
         </nav>
 
         <section id="conteudo"></section>
@@ -27,7 +28,8 @@
                 const conteudo = document.getElementById("conteudo")
                 
                 link.onclick = function(e){
-                    e.preventDefault()
+                   
+                    //e.preventDefault()
                 
                     fetch(link.href)
                     .then(resp => resp.text())
