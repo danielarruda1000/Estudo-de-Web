@@ -12,10 +12,11 @@
     <body>
         <header><h1>Exercícios HTML</h1></header>
         <nav>
-            <a href="exercicios/teste.html">00 - Nagação entre páginas</a><br>
-            <a href="exercicios/texto1.html">01 - Texto 1</a><br>
-            <a href="exercicios/listas.html">02 - Listas</a><br>
-            <a href="exercicios/listaAninhada.html">03 - Listas Aninhadas</a><br>
+            <a href="exercicios/teste.html">00 - Nagação entre páginas</a> |
+            <a href="exercicios/texto1.html">01 - Texto 1</a> |
+            <a href="exercicios/listas.html">02 - Listas</a> |
+            <a href="exercicios/listaAninhada.html">03 - Listas Aninhadas</a> |
+            <a href="exercicios/links1.html">04 - Links</a>
         </nav>
 
         <section id="conteudo"></section>
@@ -29,9 +30,9 @@
             document.querySelectorAll('a').forEach(link=>{
                 const conteudo = document.getElementById("conteudo")
                 
-                link.onclick = function(e){
+                link.onclick() = function(e){
                    
-                    //e.preventDefault()
+                    e.preventDefault()
                 
                     fetch(link.href)
                     .then(resp => resp.text())
