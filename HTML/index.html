@@ -4,32 +4,29 @@
 
     <head>
         <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta http-equiv="X-UA-Comptible" content="ie=edge">
-        <title>Exercicio HTML</title>
+        <link href="https://fonts.googleapis.com/css?family=Oswald&display=swap" rel="stylesheet">
+        <title>Exercícios HTML</title>
     </head>
 
     <body>
-        <header><h1>Exercícios HTML</h1></header>
-        <nav>
-            <a href="exercicios/teste.html">00 - Nagação entre páginas</a> |
-            <a href="exercicios/texto1.html">01 - Texto 1</a> |
-            <a href="exercicios/listas.html">02 - Listas</a> |
-            <a href="exercicios/listaAninhada.html">03 - Listas Aninhadas</a> |
-            <a href="exercicios/links1.html">04 - Links</a> |
-            <a href="exercicios/tabela.html">05 - Tabela</a> |
-            <a href="exercicios/form/form.html">06 - Formulário</a> |
-            <a href="exercicios/imagens.html">07 - Slide de imagens</a> |
-            <a href="exercicios/video.html">08 - Video</a>
-        </nav>
-
-        <section id="conteudo"></section>
-        
-        <footer>
-                <br>
-                Estudo de Web Moderno
-        </footer>
-        
+        <div class="topo">
+            <h1>Exercícios HTML</h1>
+            <nav>
+                <a href="exercicios/teste.html">Nagação entre páginas</a>
+                <a href="exercicios/texto1.html">Texto 1</a>
+                <a href="exercicios/listas.html">Listas</a>
+                <a href="exercicios/listaAninhada.html">Listas Aninhadas</a>
+                <a href="exercicios/links1.html">Links</a>
+            </nav>
+            <nav>
+                <a href="exercicios/tabela.html">Tabela</a>
+                <a href="exercicios/form/form.html">Formulário</a>
+                <a href="exercicios/imagens.html">Slide de imagens</a>
+                <a href="exercicios/video.html">Video</a>
+            </nav>
+            <p>Estudo de web</p>
+        </div>
+    
         <script>
             document.querySelectorAll('a').forEach(link=>{
                 const conteudo = document.getElementById("conteudo")
@@ -47,5 +44,60 @@
         </script>
     
     </body>
+
+    <style>
+
+        html{
+            background-color:rgb(228, 228, 228);
+            font-family: 'Oswald' , sans-serif;
+        }
+
+        .topo p{
+            font-size: 20px;
+        }
+
+        .topo{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 100%;
+        }
+
+        .topo h1{
+            font-weight: normal;
+            font-size: 35px;
+            text-align: center;
+            width: 40%;
+            padding: 10px 10px;
+            border-bottom: solid 5px orange;
+            background-color: rgb(63, 63, 63);
+            color:whitesmoke;
+            display: block;
+            }
+
+       .topo nav{
+            
+            width: 40%;
+            background-color: whitesmoke;
+            text-align: center;
+            display: inline-block;
+            padding: 10px ;
+        }
+
+        .topo a{
+            font-size: 25px;
+            color: rgb(63, 63, 63);
+            text-align: center;
+            margin: 10px;
+        }
+        .topo nav:hover{
+            background-color: orange;
+        }
+
+        .topo a:hover{
+            color: whitesmoke;
+        }
+    </style>
    
 </html>
